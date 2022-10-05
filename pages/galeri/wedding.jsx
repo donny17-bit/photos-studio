@@ -1,29 +1,16 @@
 import Layout from "../../components/layout";
-import axios from "../../utils/axios";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
-import Image from "next/image";
 
 function Wedding() {
+  const source = JSON.parse(process.env.WEDDING);
+  console.log({ source });
+
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
   });
-
-  const source = [
-    "/assets/wedding/wedding1.jpg",
-    "/assets/wedding/wedding2.jpg",
-    "/assets/wedding/wedding3.jpg",
-    "/assets/wedding/wedding4.jpg",
-    "/assets/wedding/wedding5.jpg",
-    "/assets/wedding/wedding6.jpg",
-    "/assets/wedding/wedding7.jpg",
-    "/assets/wedding/wedding8.jpg",
-    "/assets/wedding/wedding9.jpg",
-    "/assets/wedding/wedding10.jpg",
-    "/assets/wedding/wedding11.jpg",
-  ];
 
   function openLightboxOnSlide(number) {
     setLightboxController({
@@ -47,10 +34,10 @@ function Wedding() {
       <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
-            <div className="col galeri-col align-self-center px-1">
+            <div className="col galeri-col align-self-center px-1" key={index}>
               <div className="overlay-container">
                 <img
-                  src={`/assets/wedding/wedding${index + 1}.jpg`}
+                  src={item}
                   alt="galeri-wedding"
                   className="galeri-img px-0"
                 />

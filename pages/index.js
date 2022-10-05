@@ -9,6 +9,8 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const video = JSON.parse(process.env.VIDEO_CINEMATIC);
+
   const config = {
     animate: true,
     openOnload: 0,
@@ -168,27 +170,20 @@ export default function Home() {
             <div className="row row-cols-3 justify-content-center d-flex">
               <div className="col-auto">
                 <iframe
-                  src="https://www.instagram.com/p/CT6xoFAp4v6/?utm_source=ig_web_copy_link"
-                  frameBorder="0"
-                  height="200"
-                  className="w-100"
-                ></iframe>
-              </div>
-              <div className="col-auto">
-                <iframe
-                  src="https://drive.google.com/file/d/1B4DHtG-_z8v_otI82gh_oUc3N-1M2Yv5/preview"
-                  // width="640"
+                  src={video[0]}
                   className="w-100"
                   height="200"
                   allow="autoplay"
+                  frameBorder="0"
                 ></iframe>
               </div>
               <div className="col-auto">
                 <iframe
-                  src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                  src={video[1]}
                   frameBorder="0"
                   height="200"
                   className="w-100"
+                  allow="autoplay"
                 ></iframe>
               </div>
             </div>
