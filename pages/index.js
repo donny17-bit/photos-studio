@@ -206,6 +206,7 @@ export default function Home() {
             />
           </div>
         </div>
+        
          */}
         <Link href="/kontak">
           <button
