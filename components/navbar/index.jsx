@@ -36,7 +36,7 @@ export default function NavbarMenu() {
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
                 <img
-                  src="/assets/logo/janggala_transparan_square.png"
+                  src="/assets/logo/Janggala_transparan_square.png"
                   alt="Logo.img"
                   style={{ objectFit: "cover", width: "40px", height: "auto" }}
                 />
