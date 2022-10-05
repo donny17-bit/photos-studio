@@ -2,6 +2,15 @@ import React from "react";
 import Link from "next/link";
 
 function Services() {
+  const family = process.env.THUMBNAIL_FAMILY;
+  const wedding = process.env.THUMBNAIL_WEDDING;
+  const prewedding = process.env.THUMBNAIL_PREWEDDING;
+  const engagement = process.env.THUMBNAIL_ENGAGEMENT;
+  const new_born = process.env.THUMBNAIL_NEW_BORN;
+  const group = process.env.THUMBNAIL_GROUP;
+  const graduation = process.env.THUMBNAIL_GRADUATION;
+  const maternity = process.env.THUMBNAIL_MATERNITY;
+
   return (
     <div className="home-services my-5 container">
       <h3 className="text-center title-text">Janggala Studio</h3>
@@ -13,7 +22,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/family.jpg"
+                src={family}
                 className="card-img rounded-0 home-service-img"
                 alt="family-img "
               />
@@ -36,7 +45,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/wedding.jpg"
+                src={wedding}
                 className="card-img rounded-0 home-service-img"
                 alt="wedding-img "
               />
@@ -59,7 +68,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/prewedding.jpg"
+                src={prewedding}
                 className="card-img rounded-0 home-service-img"
                 alt="prewedding-img "
               />
@@ -82,7 +91,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/engagement.jpg"
+                src={engagement}
                 alt="engagement-img"
                 className="card-img rounded-0 home-service-img"
               />
@@ -105,7 +114,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/graduation.jpg"
+                src={graduation}
                 className="card-img rounded-0 home-service-img"
                 alt="graduation-img"
               />
@@ -128,7 +137,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/maternity.jpg"
+                src={maternity}
                 className="card-img rounded-0 home-service-img"
                 alt="maternity-img"
               />
@@ -151,7 +160,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/new_born.jpg"
+                src={new_born}
                 className="card-img rounded-0 home-service-img"
                 alt="new-born-img"
               />
@@ -171,7 +180,7 @@ function Services() {
           <Link href="/galeri/group" className="stretched-link home-card-title">
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/thumbnail/group.jpg"
+                src={group}
                 className="card-img rounded-0 home-service-img"
                 alt="group-img"
               />

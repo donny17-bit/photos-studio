@@ -4,8 +4,6 @@ import Link from "next/link";
 import FsLightbox from "fslightbox-react";
 
 function Family() {
-  const source = JSON.parse(process.env.FAMILY);
-
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
@@ -17,6 +15,8 @@ function Family() {
       slide: number,
     });
   }
+
+  const source = JSON.parse(process.env.FAMILY);
 
   return (
     <>

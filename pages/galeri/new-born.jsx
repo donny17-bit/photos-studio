@@ -1,5 +1,4 @@
 import Layout from "../../components/layout";
-import axios from "../../utils/axios";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
@@ -17,13 +16,7 @@ function NewBorn() {
     });
   }
 
-  const source = [
-    "/assets/new_born/new_born1.jpg",
-    "/assets/new_born/new_born2.jpg",
-    "/assets/new_born/new_born3.jpg",
-    "/assets/new_born/new_born4.jpg",
-    "/assets/new_born/new_born5.jpg",
-  ];
+  const source = JSON.parse(process.env.NEW_BORN);
 
   return (
     <>
@@ -40,10 +33,10 @@ function NewBorn() {
       <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
-            <div className="col galeri-col align-self-center px-1">
+            <div className="col galeri-col align-self-center px-1" key={index}>
               <div className="overlay-container">
                 <img
-                  src={`/assets/new_born/new_born${index + 1}.jpg`}
+                  src={item}
                   alt="galeri-terbaru"
                   className="galeri-img px-0"
                 />

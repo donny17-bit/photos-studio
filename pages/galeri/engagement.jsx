@@ -15,20 +15,7 @@ function Engagement() {
     });
   }
 
-  const source = [
-    "/assets/engagement/engagement1.jpg",
-    "/assets/engagement/engagement2.jpg",
-    "/assets/engagement/engagement3.jpg",
-    "/assets/engagement/engagement4.jpg",
-    "/assets/engagement/engagement5.jpg",
-    "/assets/engagement/engagement6.jpg",
-    "/assets/engagement/engagement7.jpg",
-    "/assets/engagement/engagement8.jpg",
-    "/assets/engagement/engagement9.jpg",
-    "/assets/engagement/engagement10.jpg",
-    "/assets/engagement/engagement11.jpg",
-    "/assets/engagement/engagement12.jpg",
-  ];
+  const source = JSON.parse(process.env.ENGAGEMENT);
 
   return (
     <>
@@ -45,10 +32,10 @@ function Engagement() {
       <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
-            <div className="col galeri-col align-self-center px-1">
+            <div className="col galeri-col align-self-center px-1" key={index}>
               <div className="overlay-container">
                 <img
-                  src={`/assets/engagement/engagement${index + 1}.jpg`}
+                  src={item}
                   alt="galeri-terbaru"
                   className="galeri-img px-0"
                 />

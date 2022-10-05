@@ -9,7 +9,8 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
-  const video = JSON.parse(process.env.VIDEO_CINEMATIC);
+  const banner = JSON.parse(process.env.BANNER);
+  const video = JSON.parse(process.env.VIDEO);
 
   const config = {
     animate: true,
@@ -61,21 +62,21 @@ export default function Home() {
           >
             <Carousel.Item>
               <img
-                src="/assets/banner/banner1.jpg"
+                src={banner[0]}
                 className="home-img d-block"
                 alt="Studio Jenggala"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/banner/banner2.jpg"
+                src={banner[1]}
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/banner/banner3.jpg"
+                src={banner[2]}
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />
@@ -190,7 +191,7 @@ export default function Home() {
           </div>
         </div>
         <Testimony />
-        <div className="my-5 container">
+        {/* <div className="my-5 container">
           <h3 className="text-center title-text">FAQ</h3>
           <div className="home-faq justify-content-center d-flex pt-3">
             <Faq
@@ -205,6 +206,7 @@ export default function Home() {
             />
           </div>
         </div>
+         */}
         <Link href="/kontak">
           <button
             type="button"

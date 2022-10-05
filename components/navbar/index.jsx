@@ -45,9 +45,6 @@ export default function NavbarMenu() {
             <Offcanvas.Body>
               <Nav className="ms-auto">
                 <NavDropdown className="mx-1" title="GALERI">
-                  <NavDropdown.Item href="/galeri" className="navbar-item">
-                    Foto Terbaru
-                  </NavDropdown.Item>
                   <NavDropdown.Item
                     href="/galeri/family"
                     className="navbar-item"
@@ -61,7 +58,7 @@ export default function NavbarMenu() {
                     Foto Wedding
                   </NavDropdown.Item>
                   <NavDropdown.Item
-                    href="/galeri/personal"
+                    href="/galeri/prewedding"
                     className="navbar-item"
                   >
                     Foto Prewedding
@@ -73,7 +70,7 @@ export default function NavbarMenu() {
                     Foto Engagement
                   </NavDropdown.Item>
                   <NavDropdown.Item
-                    href="/galeri/prewedding"
+                    href="/galeri/graduation"
                     className="navbar-item"
                   >
                     Foto Graduation

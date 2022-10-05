@@ -1,5 +1,4 @@
 import Layout from "../../components/layout";
-import axios from "../../utils/axios";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
@@ -16,30 +15,7 @@ function Prewedding() {
       slide: number,
     });
   }
-
-  const source = [
-    "/assets/prewedding/prewedding1.jpg",
-    "/assets/prewedding/prewedding2.jpg",
-    "/assets/prewedding/prewedding3.jpg",
-    "/assets/prewedding/prewedding4.jpg",
-    "/assets/prewedding/prewedding5.jpg",
-    "/assets/prewedding/prewedding6.jpg",
-    "/assets/prewedding/prewedding7.jpg",
-    "/assets/prewedding/prewedding8.jpg",
-    "/assets/prewedding/prewedding9.jpg",
-    "/assets/prewedding/prewedding10.jpg",
-    "/assets/prewedding/prewedding11.jpg",
-    "/assets/prewedding/prewedding12.jpg",
-    "/assets/prewedding/prewedding13.jpg",
-    "/assets/prewedding/prewedding14.jpg",
-    "/assets/prewedding/prewedding15.jpg",
-    "/assets/prewedding/prewedding16.jpg",
-    "/assets/prewedding/prewedding17.jpg",
-    "/assets/prewedding/prewedding18.jpg",
-    "/assets/prewedding/prewedding19.jpg",
-    "/assets/prewedding/prewedding20.jpg",
-    "/assets/prewedding/prewedding21.jpg",
-  ];
+  const source = JSON.parse(process.env.PREWEDDING);
 
   return (
     <>
@@ -56,10 +32,10 @@ function Prewedding() {
       <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
-            <div className="col galeri-col align-self-center px-1">
+            <div className="col galeri-col align-self-center px-1" key={index}>
               <div className="overlay-container">
                 <img
-                  src={`/assets/prewedding/prewedding${index + 1}.jpg`}
+                  src={item}
                   alt="galeri-prewedding"
                   className="galeri-img px-0"
                 />

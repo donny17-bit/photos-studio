@@ -19,6 +19,8 @@ function Wedding() {
     });
   }
 
+  const source = JSON.parse(process.env.WEDDING);
+
   return (
     <>
       <div className="title-banner text-center justify-content-center container-fluid align-items-center d-flex">
