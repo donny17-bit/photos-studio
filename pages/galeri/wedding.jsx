@@ -5,7 +5,6 @@ import FsLightbox from "fslightbox-react";
 
 function Wedding() {
   const source = JSON.parse(process.env.WEDDING);
-  console.log({ source });
 
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
@@ -18,8 +17,6 @@ function Wedding() {
       slide: number,
     });
   }
-
-  const source = JSON.parse(process.env.WEDDING);
 
   return (
     <>
