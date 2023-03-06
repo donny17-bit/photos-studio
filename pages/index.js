@@ -217,5 +217,5 @@ export default function Home() {
 }
 
 Home.getLayout = function getLayout(page) {
-  return <Layout title={"Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Ghibli Studio"}>{page}</Layout>;
 };
