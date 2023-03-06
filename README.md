@@ -2,7 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+1. Download the code with git clone
+2. Run `npm install` to install dependencies
+3. Make `.env.local` file
+4. Run the development server:
 
 ```bash
 npm run dev
@@ -10,13 +13,31 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## .env Parameter
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+WHATSAPP='810xxxxx'
+VIDEO=["url_1","url_2"]
+FAMILY=["url_1","url_2","url..."]
+NEW_BORN=["url_1","url_2","url..."]
+WEDDING=["url_1","url_2","url..."]
+MATERNITY=["url_1","url_2","url..."]
+GROUP=["url_1","url_2","url..."]
+GRADUATION=["url_1","url_2","url..."]
+ENGAGEMENT=["url_1","url_2","url..."]
+PREWEDDING=["url_1","url_2","url..."]
+BANNER=["url_1","url_2","url_3"]
+THUMBNAIL_FAMILY=url
+THUMBNAIL_WEDDING=url
+THUMBNAIL_PREWEDDING=url
+THUMBNAIL_ENGAGEMENT=url
+THUMBNAIL_NEW_BORN=url
+THUMBNAIL_GRADUATION=url
+THUMBNAIL_GROUP=url
+THUMBNAIL_MATERNITY=url
+```
 
 ## Learn More
 
