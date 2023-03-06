@@ -45,12 +45,8 @@ export default function Home() {
   return (
     <>
       <div className="container-fluid p-0">
-        <div className="home-logo justify-content-center d-flex">
-          <Image
-            src="/assets/logo/Janggala_transparan.png"
-            width={400}
-            height={266}
-          />
+        <div className="home-logo justify-content-center d-flex pb-5">
+          <Image src="/assets/logo/logo.png" width={500} height={266} />
         </div>
         <div>
           <Carousel
@@ -87,7 +83,7 @@ export default function Home() {
         <div className="home-why py-5">
           <div className="row justify-content-center d-flex text-center mx-0">
             <div className="col-auto px-5">
-              <p className="title-text my-0">Kenapa Pilih Janggala Studio</p>
+              <p className="title-text my-0">Kenapa Pilih Ghibli Studio</p>
             </div>
           </div>
           <div className="container">

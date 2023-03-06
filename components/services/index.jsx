@@ -13,7 +13,7 @@ function Services() {
 
   return (
     <div className="home-services my-5 container">
-      <h3 className="text-center title-text">Janggala Studio</h3>
+      <h3 className="text-center title-text">Ghibli Studio</h3>
       <div className="row row-cols-4 g-3 mt-5 p-0 justify-content-center">
         <div className="col mb-2 home-service-col">
           <Link
