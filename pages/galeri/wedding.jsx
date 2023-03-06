@@ -70,5 +70,5 @@ function Wedding() {
 export default Wedding;
 
 Wedding.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Wedding | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto Wedding | Ghibli Studio"}>{page}</Layout>;
 };

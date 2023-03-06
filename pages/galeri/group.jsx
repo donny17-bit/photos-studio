@@ -69,5 +69,5 @@ function Group() {
 export default Group;
 
 Group.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Group | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto Group | Ghibli Studio"}>{page}</Layout>;
 };

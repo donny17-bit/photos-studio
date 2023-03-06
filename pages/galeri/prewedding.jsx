@@ -68,5 +68,5 @@ function Prewedding() {
 export default Prewedding;
 
 Prewedding.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Prewedding | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto Prewedding | Ghibli Studio"}>{page}</Layout>;
 };

@@ -69,5 +69,5 @@ function Maternity() {
 export default Maternity;
 
 Maternity.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Maternity | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto Maternity | Ghibli Studio"}>{page}</Layout>;
 };

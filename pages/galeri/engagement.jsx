@@ -68,5 +68,5 @@ function Engagement() {
 export default Engagement;
 
 Engagement.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Engagement | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto Engagement | Ghibli Studio"}>{page}</Layout>;
 };

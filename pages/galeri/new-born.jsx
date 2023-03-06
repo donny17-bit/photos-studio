@@ -69,5 +69,5 @@ function NewBorn() {
 export default NewBorn;
 
 NewBorn.getLayout = function getLayout(page) {
-  return <Layout title={"Foto New Born | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto New Born | Ghibli Studio"}>{page}</Layout>;
 };

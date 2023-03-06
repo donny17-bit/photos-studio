@@ -69,5 +69,5 @@ function Graduation() {
 export default Graduation;
 
 Graduation.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Graduation | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto Graduation | Ghibli Studio"}>{page}</Layout>;
 };

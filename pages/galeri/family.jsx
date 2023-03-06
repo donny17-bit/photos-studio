@@ -69,5 +69,5 @@ function Family() {
 export default Family;
 
 Family.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Family | Janggala Studio"}>{page}</Layout>;
+  return <Layout title={"Foto Family | Ghibli Studio"}>{page}</Layout>;
 };
