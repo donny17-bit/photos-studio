@@ -12,6 +12,7 @@ const nextConfig = {
     ENGAGEMENT: process.env.ENGAGEMENT,
     NEW_BORN: process.env.NEW_BORN,
     GRADUATION: process.env.GRADUATION,
+    MATERNITY: process.env.MATERNITY,
     GROUP: process.env.GROUP,
     THUMBNAIL_FAMILY: process.env.THUMBNAIL_FAMILY,
     THUMBNAIL_WEDDING: process.env.THUMBNAIL_WEDDING,
@@ -20,6 +21,7 @@ const nextConfig = {
     THUMBNAIL_NEW_BORN: process.env.THUMBNAIL_NEW_BORN,
     THUMBNAIL_GRADUATION: process.env.THUMBNAIL_GRADUATION,
     THUMBNAIL_GROUP: process.env.THUMBNAIL_GROUP,
+    THUMBNAIL_MATERNITY: process.env.THUMBNAIL_MATERNITY,
   },
 };
 
